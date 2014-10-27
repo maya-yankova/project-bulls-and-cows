@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bulls and Cows</title>
+		<script type="text/javascript" src="jquery-2.1.1.min.js" ></script>
+        <script type="text/javascript" src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body >
+		<div id='wrapper'>
+			<h1 align="center">Bulls and Cows</h1>
+		<div id='game'>
+			<div id='user'>
+				<h2>Player</h2>
+				<span id='userSecretNumber'>* * * *</span><br>
+				<div id='tryNumber'>
+					<input type="number" id='userN1' min="1" max="9" value="1">
+					<input type="number" id='userN2' min="0" max="9" value="0">
+					<input type="number" id='userN3' min="0" max="9" value="0">
+					<input type="number" id='userN4' min="0" max="9" value="0"><br>
+					
+					<button type="button" id="buttonTry" onclick="userGuess()">Check</button>
+				</div>
+				<div id='userGuesses'>
+					<h4>Guesses</h4>
+					
+				</div>
+			</div>
+			
+			<div id='pc'>
+				<h2>Computer</h2>
+				<span id='pcSecretNumber'>* * * *</span><br>
+				<div id='pcGuesses'>
+					<h4>Guesses</h4>
+					
+				</div>
+			</div>
+		</div>
+		<div id='setNumber'>
+			<h4>Please put your secret number.</h4>
+			<div id='putNumber'>
+					<input type="number" id="putN1" min="1" max="9" value="1">
+					<input type="number" id="putN2" min="0" max="9" value="0">
+					<input type="number" id="putN3" min="0" max="9" value="0">
+					<input type="number" id="putN4" min="0" max="9" value="0"><br>
+					
+					<button type="button" onclick="setUserNumber()" >Put Your Number</button>
+			</div>
+			<span id='msg'></span>
+		</div>
+		<h1 id='winner'></h1>
+		</div>
+    </body>
+</html>

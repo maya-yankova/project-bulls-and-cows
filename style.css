@@ -1,0 +1,48 @@
+body {
+	font-family: Arial;
+}
+
+a, h1, h2, h3, h4, h5, h6, { font-weight:bold; color: black;}
+#wrapper{
+	margin:0 auto;
+	width:960px;
+}
+#game{
+	margin:0 auto;
+	width:960px;
+	border:1px solid #ccc;
+	border-radius: 10px;
+	margin-top:30px;
+	
+}
+#setNumber{
+	margin:0 auto;
+	width:264px;
+	border:1px solid #ccc;
+	border-radius: 10px;
+	margin-top:30px;
+}
+#game div{
+	float: left;
+	position: relative;
+}
+#game:after{
+	content: ".";
+	display: block;
+	clear: both; 
+	visibility:hidden;
+}
+#user{
+	width:500px;
+	border-right-style: solid;
+	border-right-color: #ccc;
+	border-right-width: 1px;
+	margin-right: 20px;
+}
+#tryNumber{
+	margin-right:20px;
+	padding-top:30px;
+}
+span{
+	color:red;
+}
